@@ -65,34 +65,31 @@
         <h2>Recevoir ma simulation gratuite</h2>
         <p style="margin-top:-4px;">Réponse sous 24h.</p>
         <!-- Formulaire : envoi direct par email avec FormSubmit -->
-        <form action="https://formsubmit.co/mdiouf@novaffi.fr" method="POST">
-          <!-- Anti-spam honeypot -->
-          <input type="text" name="_honey" style="display:none">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="Nouveau lead — Simulation fiscale">
-          <input type="hidden" name="_template" value="table">
-          <label for="name">Votre nom</label>
-          <input id="name" name="Nom" type="text" placeholder="Nom Prénom" required>
-          <label for="email">Votre email</label>
-          <input id="email" name="Email" type="email" placeholder="ex: nom@email.com" required>
-          <label for="phone">Votre téléphone</label>
-          <input id="phone" name="Téléphone" type="tel" placeholder="ex: 06 12 34 56 78" required>
-          <label for="status">Votre situation</label>
-          <select id="status" name="Situation">
-            <option>Salarié</option>
-            <option>Indépendant / Chef d’entreprise</option>
-            <option>Retraité</option>
-            <option>Autre</option>
-          </select>
-          <div class="checkbox">
-            <input id="consent" type="checkbox" required>
-            <label for="consent">J’accepte d’être recontacté pour recevoir ma simulation personnalisée.</label>
-          </div>
-          <button class="btn" type="submit">Je veux ma simulation</button>
-        </form>
-        <div class="cta-bar"></div>
-      </aside>
-    </section>
+       <form name="lead-cgp" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html">
+  <input type="hidden" name="form-name" value="lead-cgp">
+  <p style="display:none">
+    <label>Ne pas remplir : <input name="bot-field"></label>
+  </p>
+
+  <label for="name">Votre nom</label>
+  <input id="name" name="Nom" type="text" required>
+
+  <label for="email">Votre email</label>
+  <input id="email" name="Email" type="email" required>
+
+  <label for="phone">Votre téléphone</label>
+  <input id="phone" name="Téléphone" type="tel" required>
+
+  <label for="status">Votre situation</label>
+  <select id="status" name="Situation">
+    <option>Salarié</option>
+    <option>Indépendant / Chef d’entreprise</option>
+    <option>Retraité</option>
+  </select>
+
+  <label><input type="checkbox" required> J’accepte d’être recontacté pour ma simulation</label>
+  <button type="submit">Je veux ma simulation</button>
+</form>
 
     <section class="card" style="margin-top:24px;">
       <h2>À propos</h2>
