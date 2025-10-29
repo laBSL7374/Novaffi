@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Merci — Simulation envoyée</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; background:#f9fafb; text-align:center; padding:60px; }
+    h1 { color:#0a4d8b; }
+    p { font-size:18px; }
+    a { display:inline-block; margin-top:20px; color:white; background:#0a4d8b; padding:14px 22px; border-radius:8px; text-decoration:none; }
+  </style>
+</head>
+<body>
+
+<h1>✅ Merci !</h1>
+<p>Votre demande a été envoyée avec succès.<br>Nous vous contactons sous 24h.</p>
+
+<a href="/">Retour à la page d'accueil</a>
+
+</body>
+</html>
