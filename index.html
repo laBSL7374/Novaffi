@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Réduisez vos impôts – Simulation gratuite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Audit fiscal gratuit en 15 minutes. Simulation immédiate de vos économies d'impôt avec un conseiller en gestion de patrimoine indépendant.">
+  <style>
+    :root { --brand:#0a4d8b; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; margin:0; padding:0; background:#f7f9fb; color:#0f172a; }
+    header { background:var(--brand); color:#fff; padding:48px 16px; text-align:center; }
+    h1 { font-size:34px; margin:0 0 8px; line-height:1.2; }
+    header p { margin:0; font-size:18px; opacity:.95; }
+    .container { max-width:980px; margin:0 auto; padding:24px 16px 56px; }
+    .grid { display:grid; grid-template-columns:1fr; gap:24px; }
+    @media(min-width:900px){ .grid { grid-template-columns: 1.2fr .8fr; } }
+    .card { background:#fff; padding:24px; border-radius:14px; box-shadow:0 8px 24px rgba(2,6,23,.06); }
+    h2 { font-size:24px; margin:0 0 12px; }
+    p { font-size:16px; line-height:1.6; }
+    .list { margin:0; padding-left:18px; }
+    label { display:block; font-size:14px; margin:10px 0 6px; }
+    input, select { width:100%; padding:12px 14px; border:1px solid #e5e7eb; border-radius:10px; font-size:15px; }
+    .checkbox { display:flex; align-items:flex-start; gap:10px; font-size:14px; margin:10px 0; }
+    .btn { appearance:none; border:none; background:var(--brand); color:#fff; font-weight:700; padding:14px 18px; border-radius:12px; cursor:pointer; width:100%; margin-top:6px; }
+    .btn:hover { filter: brightness(0.95); }
+    .badges { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+    .badge { background:#eef6ff; color:#083863; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:700; letter-spacing:.2px; }
+    footer { text-align:center; font-size:13px; color:#475569; padding:28px 12px 56px; }
+    .cta-bar { text-align:center; margin-top:14px; }
+    .cta-link { color:#fff; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Réduisez vos impôts dès cette année</h1>
+    <p>Audit fiscal GRATUIT en 15 minutes — Simulation immédiate de vos économies</p>
+    <div class="badges">
+      <span class="badge">Conseiller indépendant</span>
+      <span class="badge">100% légal</span>
+      <span class="badge">Sans engagement</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <article class="card">
+        <h2>Ce que vous allez obtenir</h2>
+        <p>En quelques minutes, vous recevez une estimation claire, chiffrée et personnalisée :</p>
+        <ul class="list">
+          <li>Économie d'impôt possible cette année (PER, assurance‑vie, épargne, immobilier)</li>
+          <li>Meilleure solution selon votre profil (salarié, indépendant, chef d’entreprise)</li>
+          <li>Projection retraite & rendement</li>
+          <li>Stratégie 100% légale, simple et pragmatique</li>
+        </ul>
+
+        <div class="card" style="margin-top:18px;">
+          <h2>Pourquoi le faire maintenant ?</h2>
+          <p>Chaque année, des contribuables paient plus d’impôts que nécessaire. Une simple optimisation peut réduire votre charge fiscale tout en augmentant votre patrimoine.</p>
+          <p><strong>Bonus :</strong> Accompagnement indépendant, objectif et confidentiel.</p>
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Recevoir ma simulation gratuite</h2>
+        <p style="margin-top:-4px;">Réponse sous 24h.</p>
+        <!-- Formulaire : envoi direct par email avec FormSubmit -->
+        <form action="https://formsubmit.co/dioufmartin@gmail.com" method="POST">
+          <!-- Anti-spam honeypot -->
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nouveau lead — Simulation fiscale">
+          <input type="hidden" name="_template" value="table">
+          <label for="name">Votre nom</label>
+          <input id="name" name="Nom" type="text" placeholder="Nom Prénom" required>
+          <label for="email">Votre email</label>
+          <input id="email" name="Email" type="email" placeholder="ex: nom@email.com" required>
+          <label for="phone">Votre téléphone</label>
+          <input id="phone" name="Téléphone" type="tel" placeholder="ex: 06 12 34 56 78" required>
+          <label for="status">Votre situation</label>
+          <select id="status" name="Situation">
+            <option>Salarié</option>
+            <option>Indépendant / Chef d’entreprise</option>
+            <option>Retraité</option>
+            <option>Autre</option>
+          </select>
+          <div class="checkbox">
+            <input id="consent" type="checkbox" required>
+            <label for="consent">J’accepte d’être recontacté pour recevoir ma simulation personnalisée.</label>
+          </div>
+          <button class="btn" type="submit">Je veux ma simulation</button>
+        </form>
+        <div class="cta-bar"></div>
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:24px;">
+      <h2>À propos</h2>
+      <p>Conseiller en gestion de patrimoine indépendant basé à Annecy. J’accompagne cadres, entrepreneurs et professions libérales dans l’optimisation fiscale et la préparation de la retraite, en toute objectivité.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 — Conseiller en Gestion de Patrimoine indépendant — Mentions légales & RGPD. <br>
+    En soumettant le formulaire, vous acceptez d’être recontacté pour votre simulation personnalisée.
+  </footer>
+</body>
+</html>
